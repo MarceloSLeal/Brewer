@@ -1,6 +1,6 @@
 # Brewer
 
-Sistema desenvolvido com Spring Frame Work, JavaScript e Bootstrap
+Sistema desenvolvido com Spring Framework, JavaScript e Bootstrap
 
 
 # Screenshots
