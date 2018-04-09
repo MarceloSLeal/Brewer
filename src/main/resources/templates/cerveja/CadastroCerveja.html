@@ -19,7 +19,7 @@
 			<div class="row">
 				<div class="col-xs-10">
 					<h1 th:if="${cerveja.nova}">Cadastro de cerveja</h1>
-					<h1 th:unless="${cerveja.nova}" th:text="|Edição da ${cerveja.nome}|">Cadastro de cerveja</h1>
+					<h1 th:unless="${cerveja.nova}" th:text="|Edição da ${cerveja.nome}|">Edição de cerveja</h1>
 				</div>
 			
 				<div class="col-xs-2">
@@ -138,6 +138,7 @@
 					
 					<div class="js-container-foto-cerveja" th:attr="data-url-fotos=@{/fotos}">
 						<div id="upload-drop" class="bw-upload">
+							<img th:src="@{/images/mini-loading.gif}" class="js-img-loading  hidden"/>
 							<i class="glyphicon  glyphicon-cloud-upload"></i>
 							<span>Arraste a foto aqui ou </span>
 							<a class="bw-upload-form-file">selecione <input id="upload-select" type="file" accept=".jpg,.jpeg,.png"/></a>
